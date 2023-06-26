@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: whitesmoke ;
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.input-tarefa {
+  padding: 5px;
+}
+
+.btn-tarefa {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  transition: 0.7s;
+  border:none;
+}
+
+.btn-tarefa:hover {
+  background-color: white;
+  color: var(--primary-color-darker);
+  border: 1px solid black;
+  padding: 6px;
+
+}
+
+.apagar {
+  background: none;
+  border:none;
+  cursor: pointer;
+}
+
+.tarefas {
+  margin-top: 50px;
+
+}
+
+.tarefas li {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .tarefas li {
+    font-size: 16px;
+  }
+}
+
